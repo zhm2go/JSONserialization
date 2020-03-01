@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.duke.ece651.classbuilder.ClassBuilderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-07T04:46:20" hostname="zhm2go-VirtualBox" time="0.475">
+  <properties/>
+  <testcase name="test_()" classname="edu.duke.ece651.classbuilder.ClassBuilderTest" time="0.475"/>
+  <system-out><![CDATA[hwk1/testing/empty/Course.java
+hwk1/testing/empty/Office.java
+hwk1/testing/empty/Faculty.java
+hwk1/testing/empty/Grade.java
+hwk1/testing/empty/Deserializer.java
+hwk1/testing/empty/Empty.java
+hwk1/testing/empty/Deserializer.java
+hwk1/testing/arr/Course.java
+hwk1/testing/arr/Office.java
+hwk1/testing/arr/Faculty.java
+hwk1/testing/arr/Grade.java
+hwk1/testing/arr/Deserializer.java
+hwk1/testing/simple/Test.java
+hwk1/testing/simple/Deserializer.java
+hwk1/testing/prims/Prims.java
+hwk1/testing/prims/Deserializer.java
+hwk1/testing/nameref/Course.java
+hwk1/testing/nameref/Office.java
+hwk1/testing/nameref/Faculty.java
+hwk1/testing/nameref/Grade.java
+hwk1/testing/nameref/Deserializer.java
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

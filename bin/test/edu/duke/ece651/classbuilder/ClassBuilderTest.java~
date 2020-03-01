@@ -1,0 +1,29 @@
+package edu.duke.ece651.classbuilder;
+
+import java.util.Collection;
+
+import org.junit.jupiter.api.Test;
+
+public class ClassBuilderTest {
+  @Test
+  public void test_() {
+    ClassBuilder a = new ClassBuilder(
+                                      "{ 'classes' : [{'name' : 'Test', 'fields' : [{'name' : 'x', 'type' : 'int'}]}]}");
+    Collection<String> a_names = a.getClassNames();
+    System.out.println(a_names.iterator().next());
+    assert(a_names.iterator().next() == "Test");
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+hwk1/testing/empty/Course.java
+hwk1/testing/empty/Office.java
+ hwk1/testing/empty/Faculty.java
+hwk1/testing/empty/Grade.java
+%hwk1/testing/empty/Deserializer.java
+hwk1/testing/empty/Empty.java
+%hwk1/testing/empty/Deserializer.java
+hwk1/testing/arr/Course.java
+hwk1/testing/arr/Office.java
+hwk1/testing/arr/Faculty.java
+hwk1/testing/arr/Grade.java
+#hwk1/testing/arr/Deserializer.java
+hwk1/testing/simple/Test.java
+&hwk1/testing/simple/Deserializer.java
+hwk1/testing/prims/Prims.java
+%hwk1/testing/prims/Deserializer.java
+!hwk1/testing/nameref/Course.java
+!hwk1/testing/nameref/Office.java
+"hwk1/testing/nameref/Faculty.java
+ hwk1/testing/nameref/Grade.java
+'hwk1/testing/nameref/Deserializer.java

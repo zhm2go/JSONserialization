@@ -1,0 +1,52 @@
+1.
+When it comes to nesting or recursive calls,
+I need much time to clear my mind
+and get its logic to complete it,
+such as serialization and deserialization.
+However, some simple tasks which take me witinin
+an hour are estimated as 2 or more hours.
+It seems I need a better insight of planning and
+time managing, as well as correctly
+check my ability to do a certain task.
+Large projects for me is hard to divide into
+reasonable pieces, and try to complete them
+separately. So sometimes I find another
+problem when doing a huge task.
+
+2.
+Well, I did very bad in meeting the ddls.
+The first ddl I met was two days after as it
+had been, and then I often spent 10 or more hours
+to do this assignment one day and did nothing in
+the next day. The last few days I almost took
+every minute to proceed it.
+
+3.
+converting it into C++ should be easier, the if/else
+and for/while loop are quite the same. For python,
+I can tell it needs longer time to modify, but its
+format is simple too.
+
+To accept XML files, I suppose to have a format
+transformer, to convert them independently.
+Otherwise it needs almost rewriting the code.
+
+I know little about XML, but a converter for
+output seems more attractive. 
+
+4.
+If I know more about JSONObject and JSONArray,
+plus methods to them and other types, I
+should be more skilled to do this.
+
+Open/close principle works in this assignment,
+as I need more small functions to construct
+larger ones, rather than make everything in
+a long code.
+
+5.
+
+Plan and start at the very begining, especially
+when it is posted. requiring an extension is
+also ok if reasonable. At last,
+start early, earlier, or as earliest as possible.

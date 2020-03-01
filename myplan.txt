@@ -1,0 +1,176 @@
+1.
+Task: Construct the class ClassBuilder's 2 constructors.
+The constructor will start new private fields JSONObject and JSONArray.
+Test them to make sure they fulfill the basic requirements in step1.a/b.
+Learn the basic exception throwing.
+Estimated Time: 3 hours
+Target Deadline: 12am 31st Jan, Friday
+Actual Time: 1am 2nd Feb, Sunday
+Actual Delivery: 2 constructors
+Commit ID: a9a918a6
+Comments: It really takes me over 3 hours to start with JSONObject,
+and basic coding in Java, i.e error handling, inputstream and string.
+And I am stuck in ECE650 so it is really late for this. 
+
+2.
+Task: Refine constructors' error handling, test their functionalities.
+Use try-catch to do error handling, which can catch IOException
+and JSONException.
+Small testcases are designed to validate the functionality,
+which turns a string to JSONObject.
+Estimated Time: 2 hours
+Target Deadline: 3pm 2nd Feb, Sunday
+Actual Time: 1.5 hours
+Actual Delivery: 3am 3rd Feb, Monday
+Commit ID: 9d545238
+Comments: I spend a bit long time to make my testcase right.
+Finally a naive testcase works.
+
+3.
+Task: Write getClassNames() method.
+The direct way is to loop the JSONArray inside the JSONObject,
+and get each class name. Then put them into a collection.
+Estimated Time: 2 hours
+Target Deadline: 6pm 2nd Feb, Sunday
+Actual Time: 1 hour
+Actual Delivery: 2am 3rd Feb, Monday
+Commit ID: 9d545238
+Comments: This method is just a small exercise.
+Not too long. However, I suppose the next part is more difficult.
+
+4.
+Task: simplest output class by writing getsourcecode.
+First we need to locate the class in the JSONArray,
+then start a string with all its non-array private fields.
+Then add getX and setX public method to it.
+getX should directly return the value of private field,
+setX should assign the corresponding field with the value.
+Estimated Time: 5 hours
+Target Deadline: 6pm 3rd Feb, Monday
+Actual Time: 2.5 hours
+Actual Delivery: 4.30pm 3rd Feb, Monday
+Commit ID: 72193696
+Comments: I start from the simple json input,
+and now it can work to output a class
+which can get and set attributes to standard output.
+Next I need to consider single array type and try to complete addX and getX.
+
+5.
+Task: deal with array type attributes, complete addX and getX.
+First I need to modify the setX and getX method,
+by checking its type is string of JSONObject.
+JSONObject here means it is an array.
+Then I need to get/set one element in it.
+addX just needs to add one element to the tail of it.
+numX just returns the array's length.
+Estimated Time: 5 hours
+Target Deadline: 10pm 3rd Feb, Monday
+Actual Time: 2 hours
+Actual Delivery: 8pm 3rd Feb, Monday
+Commit ID: 78af055b
+Comments: It does not take as much time as I thought.
+It is smooth to add more methods to output class.
+
+6.
+Task: add constructor to the output class
+when there is no array type field, an empty constructor is provided.
+However, an array type will need to be initialized by its
+own constructor.
+Estimated Time: 2 hours
+Target Deadline: 12pm 3rd Feb, Monday
+Actual Time: 30 minutes
+Actual Delivery: 9pm 3rd Feb, Monday
+Commit ID: 933bf53e
+Comments: A few steps above are quite normal,
+just print some formal code.
+The next step of serialization should be the most challenging part.
+
+7.
+Task: add toJSON method to the output class
+First I will not do anything about nesting JSONObject.
+I just want to output single JSONObject.
+Then a unique id is added to each class generated.
+In the end, a ref is added to avoid infinite loop by
+give the related field a ref.
+Estimated Time: 6 hours
+Target Deadline: 3pm 4th Feb, Tuesday
+Actual Time: 10 hours
+Actual Delivery: 8pm 5th Feb, Wednesday
+Commit ID: 9fbfb8b4
+Comments: It is a long long journey to work through it.
+To write toJSON method, I wrote a helper function called 
+toJSONid and keep a hashmap in it to record the number of
+objects in the hierarchy. Then a recursive call is made to
+generate that object
+if there is another object that are related. It now works
+well with simple case and nesting loop, and a ref is given
+to avoid infinite loop.
+I still need to better divide the work and plan in a smaller
+scale. It is hard to do the whole work all together.
+
+8.
+Task: It is hard to get an idea of step7.
+Before it, I would like to refine some details before.
+First add appropriate package in the front if there is a package.
+Next import JSONObject and JSONArray, and other necessary packages.
+Estimated Time: 1 hour
+Target Deadline: 12am 5th Feb, Wednesday
+Actual Time: 0.5 hour
+Actual Delivery:  12am 5th Feb, Wednesday
+Commit ID: ed263b40
+Comments: Well, there is still some other small stuff to refine.
+
+9:
+Task: ArrayList<> will only make objects in an array, not primitive.
+I need to identify each kind of primitive, and then convert them into
+corresponding objects.
+
+Estimated Time: 2 hours
+Target Deadline: 2am 5th Feb, Wednesday
+Actual Time: 1 hour
+Actual Delivery: 1am 5th Feb, Wednesday
+Commit ID: c33762d2
+Comments: It takes shorter time than I think because I only
+need to make changes in two places.
+
+10:
+Task: write createAllClasses.
+First iterate each class name from getClassnames(),
+then call getSourcecode for each class,
+output them to the correct directory.
+Estimated Time: 2 hours
+Target Deadline: 10am 5th Feb, Wednesday
+Actual Time: 2 hours
+Actual Delivery:  2.30am 5th Feb, Wedneday
+Commit ID: d5614441
+Comments: it is really technical to do some output to file stuff.
+I need to make directories when there is a package,
+then output to the file.java. Then I need to go back to 7 to
+finish toJSON.
+
+11:
+Task: deserialize the JSONObject, which is the inversion of serializing.
+I also need a hashmap to record the object to trace each of them.
+Then from id=1 to others, reconstruct them.
+Estimated Time: 6 hours
+Target Deadline: 6pm 6th Feb, Thursday
+Actual Time: 10 hours
+Actual Delivery: 10pm 6th Feb, Thursday
+Commit ID:1e498ecd
+Comments: It is similar to serialing, but exsiting tricky parts, like
+finding corresponding objects in JSONArray. It can pass the simple ref
+cases, but still cannot work to some nullexception conditions.
+
+12:
+Task: test and debug. It is easy to get some format wrong, such as
+get method. I need to be very careful when it comes to get something
+from JSONArray and JSONObject.
+Estimated Time: 3 hours
+Target Deadline: 9pm 6th Feb, Thursday
+Actual Time: 2 hours
+Actual Delivery: 10pm 6th Feb, Thursday
+Commit ID:1e498ecd
+Comments:Bugs are everywhere, and it is indirect to get the wrong
+message's idea. Sometimes I am mixing the code executed and the code
+that generates the code, so more time is needed to do this testing
+and debugging precess.

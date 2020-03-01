@@ -1,0 +1,26 @@
+package edu.duke.ece651.classbuilder;
+
+import java.io.InputStream;
+import java.util.Collection;
+
+import org.json.JSONObject;
+
+public class ClassBuilder {
+  private JSONObject jsonObject;
+  public ClassBuilder(String x) {
+    jsonObject = new JSONObject(x);
+    jsonObject.getString();
+  }
+
+  public ClassBuilder(InputStream x) {
+  }
+
+  public Collection<String> getClassNames() {
+  }
+
+  public String getSourceCode(String className) {
+  }
+
+  public void createAllClasses(String basePath) {
+  }
+}
